@@ -13,7 +13,7 @@ let time = ""
 time = ""
 adjust = 0
 heure = 15
-minutes = 38
+minutes = 58
 let strip = neopixel.create(DigitalPin.P0, 40, NeoPixelMode.RGB)
 strip.showColor(neopixel.colors(NeoPixelColors.Black))
 basic.forever(function () {
@@ -30,10 +30,10 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
-    if (heure == 15 && minutes == 39) {
+    if (heure == 15 && minutes == 59) {
         strip.showColor(neopixel.colors(NeoPixelColors.Blue))
     }
-    if (heure == 15 && minutes == 40) {
+    if (heure == 16 && minutes == 1) {
         strip.showColor(neopixel.colors(NeoPixelColors.Black))
     }
 })
